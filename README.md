@@ -19,3 +19,19 @@ Para asegurar una estructura clara y mantenible, la solución debe aplicar:
  _💡Este proyecto grupal se desarrolla como parte de la evaluación continua del curso de Programación Orientada a Objetos II en la Universidad San Ignacio de Loyola._
 
 -----------------------------------------------------
+
+* Base de datos
+
+```sql
+CREATE DATABASE IF NOT EXISTS habitaciones_db;
+USE habitaciones_db;
+
+CREATE TABLE habitaciones (
+  HabitacionID INT AUTO_INCREMENT PRIMARY KEY,
+  Numero VARCHAR(50) NOT NULL,
+  Tipo VARCHAR(50) NOT NULL,
+  Precio DOUBLE(10,2) NOT NULL
+);
+```
+
+
